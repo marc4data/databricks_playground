@@ -216,3 +216,32 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ── Databricks-specific ──────────────────────────────
+# Secrets and credentials
+*.pem
+*.key
+*.secret
+secrets.json
+credentials.json
+
+# Databricks artifacts
+.databricks/
+databricks.yml
+databricks.yaml
+*.odb
+*.wal
+*.delta/
+_delta_log/
+
+# Data files (raw data lives in UC volumes, not in the repo)
+*.json.gz
+data/
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
